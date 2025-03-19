@@ -42,6 +42,7 @@ class Film
         return $this->imageUrl;
     }
 
+    // Convierte el objeto en un array asociativo
     public function toArray(): array
     {
         return [

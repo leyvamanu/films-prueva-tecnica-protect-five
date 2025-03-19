@@ -2,7 +2,7 @@ $(document).ready(function () {
     $('.film').on('click', function (e) {
         e.preventDefault();
         const filmId = $(this).data('id');
-
+        // Realiza una petición AJAX para obtener los detalles de la película seleccionada.
         $.ajax({
             url: 'index.php',
             type: 'GET',
@@ -22,6 +22,6 @@ $(document).ready(function () {
                 alert('Error al obtener los datos de la película.');
                 console.error('Error:', error);
             }
-        })
+        });
     });
 });
